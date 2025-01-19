@@ -1,0 +1,11 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "always"
+  },
+  "cSpell.words": ["Fujimatsu", "Usecase", "Usecases", "vitest"],
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
+}
