@@ -1,12 +1,11 @@
-import { useEffect } from "react";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 export const UnitySports = () => {
   const { unityProvider } = useUnityContext({
-    dataUrl: "/unity-spotrs/Build/UnitySport.data",
-    frameworkUrl: "/unity-spotrs/Build/UnitySport.framework.js",
-    codeUrl: "/unity-spotrs/Build/UnitySport.wasm",
-    loaderUrl: "/unity-spotrs/Build/UnitySport.loader.js",
+    dataUrl: "/unity-sports/Build/UnitySport.data",
+    frameworkUrl: "/unity-sports/Build/UnitySport.framework.js",
+    codeUrl: "/unity-sports/Build/UnitySport.wasm",
+    loaderUrl: "/unity-sports/Build/UnitySport.loader.js",
   });
 
   return (
