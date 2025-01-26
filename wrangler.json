@@ -26,5 +26,6 @@
     "command": "npx opennextjs-cloudflare",
     "cwd": ".",
     "watch_dir": "./src"
-  }
+  },
+  "preview_urls": true
 }
