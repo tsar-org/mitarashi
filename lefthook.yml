@@ -1,0 +1,11 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      run: pnpm next lint
+    tsc:
+      run: pnpm run check:tsc
+    build:
+      run: pnpm opennextjs-cloudflare
+    editorconfig-checker:
+      run: pnpm run check:editorconfig

@@ -1,0 +1,5 @@
+{
+  "entry": ["src/**/*.{js,ts,jsx,tsx}"],
+  "project": ["src/**/*.{js,ts,jsx,tsx}"],
+  "ignore": ["**/*config.{js,mjs,ts}"]
+}
