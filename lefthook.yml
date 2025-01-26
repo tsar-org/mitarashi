@@ -9,3 +9,5 @@ pre-commit:
       run: pnpm opennextjs-cloudflare
     editorconfig-checker:
       run: pnpm run check:editorconfig
+    knip:
+      run: pnpm run check:knip
