@@ -1,31 +1,13 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "mitarashi",
-  "main": ".open-next/worker.js",
   "compatibility_date": "2024-09-26",
   "compatibility_flags": ["nodejs_compat"],
-  "minify": true,
-  "assets": {
-    "binding": "ASSETS",
-    "directory": ".open-next/assets"
-  },
+  "pages_build_output_dir": ".vercel/output/static",
   "observability": {
-    "enabled": true,
-    "head_sampling_rate": 1,
-    "logs": {
-      "enabled": true
-    }
+    "enabled": true
   },
-  "routes": [
-    {
-      "pattern": "mitarashi.tsar-bmb.org",
-      "custom_domain": true
-    }
-  ],
-  "build": {
-    "command": "npx opennextjs-cloudflare",
-    "cwd": ".",
-    "watch_dir": "./src"
-  },
-  "preview_urls": true
+  "vars": {
+    "NODE_VERSION": "22"
+  }
 }

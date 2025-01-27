@@ -26,4 +26,4 @@ jobs:
       - run: pnpm run check:tsc
       - run: pnpm run check:editorconfig
       - run: pnpm run check:knip
-      - run: pnpm opennextjs-cloudflare
+      - run: pnpm run pages:build
