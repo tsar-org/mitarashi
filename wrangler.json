@@ -5,28 +5,7 @@
   "compatibility_date": "2024-09-26",
   "compatibility_flags": ["nodejs_compat"],
   "pages_build_output_dir": ".vercel/output/static",
-  "minify": true,
-  "assets": {
-    "binding": "ASSETS",
-    "directory": ".open-next/assets"
-  },
   "observability": {
-    "enabled": true,
-    "head_sampling_rate": 1,
-    "logs": {
-      "enabled": true
-    }
-  },
-  "routes": [
-    {
-      "pattern": "mitarashi.tsar-bmb.org",
-      "custom_domain": true
-    }
-  ],
-  "build": {
-    "command": "npx opennextjs-cloudflare",
-    "cwd": ".",
-    "watch_dir": "./src"
-  },
-  "preview_urls": true
+    "enabled": true
+  }
 }

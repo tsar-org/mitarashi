@@ -1,7 +1,7 @@
 pre-commit:
   parallel: true
   commands:
-    biome:
+    lint:
       run: pnpm next lint
     tsc:
       run: pnpm run check:tsc
