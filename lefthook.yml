@@ -6,7 +6,7 @@ pre-commit:
     tsc:
       run: pnpm run check:tsc
     build:
-      run: pnpm opennextjs-cloudflare
+      run: pnpm run pages:build
     editorconfig-checker:
       run: pnpm run check:editorconfig
     knip:

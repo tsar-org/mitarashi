@@ -8,9 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "opennextjs-cloudflare && wrangler deploy",
-    "preview": "opennextjs-cloudflare && wrangler dev",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "pnpm run pages:build && wrangler pages dev",
+    "deploy": "pnpm run pages:build && wrangler pages deploy",
     "check:tsc": "tsc --noEmit",
     "check:editorconfig": "editorconfig-checker",
     "check:knip": "knip"
@@ -21,6 +22,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.7",
     "@cloudflare/workers-types": "^4.20250124.3",
     "@opennextjs/cloudflare": "0.3.8",
     "@types/node": "^20",
@@ -29,6 +31,7 @@
     "editorconfig-checker": "^6.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.2.23",
+    "eslint-plugin-next-on-pages": "^1.13.7",
     "knip": "^5.43.3",
     "lefthook": "^1.10.10",
     "postcss": "^8",
@@ -36,5 +39,5 @@
     "typescript": "^5",
     "wrangler": "^3.105.0"
   },
-  "packageManager": "pnpm@9.15.3"
+  "packageManager": "pnpm@9.15.4"
 }
